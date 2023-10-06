@@ -54,37 +54,26 @@ public class numbatwo {
         if (front== -1) {
             throw new Exception("Queue is empty");
         }
-        int temporary=data[front];
-        
+      int temporary=data[front];
         if (front==rear) {
             front=rear=-1;
-            
-        }else if (front==size-1) {
-            front=0;
             
         }else{
             front++;
         }
         return temporary;
-        
     }
     public int deletelast()throws Exception{
         if (front== -1) {
             throw new Exception("Queue is empty");
         }
-        int temporary=data[front];
-        
+        int temporary=data[rear];
         if (front==rear) {
             front=rear=-1;
-            
-        }else if (front==size-1) {
-            front=0;
-            
         }else{
             rear--;
         }
         return temporary;
-        
     }
     private void display()throws Exception{
         
