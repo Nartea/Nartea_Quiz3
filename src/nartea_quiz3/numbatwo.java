@@ -43,9 +43,9 @@ public class numbatwo {
         System.out.println("last");
         System.out.println("1st");
         String where=q.nextLine();
-        if (where=="1st") {
+        if (where.equalsIgnoreCase("1st")) {
             delete1st();
-        }else if(where=="last"){
+        }else if(where.equalsIgnoreCase("last")){
             deletelast();
         }
     }
